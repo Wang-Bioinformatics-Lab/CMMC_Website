@@ -1,0 +1,793 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../network_enrichment/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>CMMC Deposition Workflow - CMMC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#003DA5" data-md-color-accent="#FFB81C">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation-for-cmmc-deposition-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CMMC" class="md-header__button md-logo" aria-label="CMMC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMMC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CMMC Deposition Workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Wang-Bioinformatics-Lab/CMMC_Website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CMMC_Website
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CMMC" class="md-nav__button md-logo" aria-label="CMMC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CMMC
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Wang-Bioinformatics-Lab/CMMC_Website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CMMC_Website
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home Page
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CMMC Deposition Workflow
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        CMMC Deposition Workflow
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-links" class="md-nav__link">
+    Important Links:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-cmmc-knowledgebase" class="md-nav__link">
+    What is the CMMC knowledgebase?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-upload-of-microbial-metabolites" class="md-nav__link">
+    Single upload of microbial metabolites
+  </a>
+  
+    <nav class="md-nav" aria-label="Single upload of microbial metabolites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-step-by-step-instructions" class="md-nav__link">
+    Detailed step-by-step instructions:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-upload-of-microbial-metabolites" class="md-nav__link">
+    Batch upload of microbial metabolites
+  </a>
+  
+    <nav class="md-nav" aria-label="Batch upload of microbial metabolites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-step-by-step-instructions_1" class="md-nav__link">
+    Detailed step-by-step instructions:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network_enrichment/" class="md-nav__link">
+        Network Enrichment analysis
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-links" class="md-nav__link">
+    Important Links:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-cmmc-knowledgebase" class="md-nav__link">
+    What is the CMMC knowledgebase?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-upload-of-microbial-metabolites" class="md-nav__link">
+    Single upload of microbial metabolites
+  </a>
+  
+    <nav class="md-nav" aria-label="Single upload of microbial metabolites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-step-by-step-instructions" class="md-nav__link">
+    Detailed step-by-step instructions:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-upload-of-microbial-metabolites" class="md-nav__link">
+    Batch upload of microbial metabolites
+  </a>
+  
+    <nav class="md-nav" aria-label="Batch upload of microbial metabolites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-step-by-step-instructions_1" class="md-nav__link">
+    Detailed step-by-step instructions:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="documentation-for-cmmc-deposition-workflow">Documentation for CMMC deposition workflow<a class="headerlink" href="#documentation-for-cmmc-deposition-workflow" title="Permanent link">&para;</a></h1>
+<p>This is a guide to upload your data about microbial metabolites to the collaborative microbial metabolite center knowledgebase (CMMC-kb).</p>
+<h2 id="important-links">Important Links:<a class="headerlink" href="#important-links" title="Permanent link">&para;</a></h2>
+<p><a href="https://gnps2.org/homepage">GNPS2 website</a></p>
+<p><a href="https://gnps2.org/workflowinput?workflowname=cmmc_deposition_workflow">CMMC workflow</a></p>
+<p><a href="https://cmmc-kb.gnps2.org/">CMMC knowledgebase</a></p>
+<h2 id="what-is-the-cmmc-knowledgebase">What is the CMMC knowledgebase?<a class="headerlink" href="#what-is-the-cmmc-knowledgebase" title="Permanent link">&para;</a></h2>
+<p>Microbiome-derived metabolites are vital for human health and other ecosystems, but there is no central place where the community can store, share, and reuse this knowledge. Existing resources have limited information on microbial metabolites, their sources, genes and functions. To fill this gap, we created CMMC-kb, a knowledge base that integrates microbial information with the GNPS mass spectrometry platform and the community. CMMC-kb enables users to annotate and visualize both known and unknown microbial metabolites, and to explore and interpret their biological roles. CMMC-kb is a community-driven and constantly updated microbiome resource that allows users to link any microbial metabolite, known or unknown, with its source and bioactivity information. Moreover, the web interface and analysis tools provide benefits to both data contributors and other users.</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<ol>
+<li>A free GNPS2 account is required to contribute data and use the CMMC-kb to analyze data.</li>
+<li>Please login at the <a href="https://gnps2.org/homepage">GNPS2 homepage</a></li>
+</ol>
+<p>PS: Currently, the sign-up option is not available, but if you would like to contribute, please send an email with the desired username to hmannochiorusso@health.ucsd.edu</p>
+<ol>
+<li>CMMC-kb compliant microbial metabolite information.</li>
+<li>
+<p>Manual completion of CMMC-kb template file - <a href="https://tinyurl.com/frku9zys">link here</a></p>
+</li>
+<li>
+<p>Upload CMMC-kb compliant microbial related metabolite information, using the single upload option or batch upload option using the template file - <a href="https://gnps2.org/workflowinput?workflowname=cmmc_deposition_workflow">link here</a></p>
+</li>
+</ol>
+<h2 id="single-upload-of-microbial-metabolites">Single upload of microbial metabolites<a class="headerlink" href="#single-upload-of-microbial-metabolites" title="Permanent link">&para;</a></h2>
+<p>CMMC-kb provides a platform for users to contribute their own microbial metabolites to the center knowledgebase. There are several requirements for uploading your data, see Requirements.</p>
+<h3 id="detailed-step-by-step-instructions">Detailed step-by-step instructions:<a class="headerlink" href="#detailed-step-by-step-instructions" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Sign-up or login to your GNPS2 account</p>
+</li>
+<li>
+<p>Navigate to the GNPS2 website and click on the “Launch Workflows” button</p>
+</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide1.png" /></p>
+<ol>
+<li>This will show the list of available workflows on GNPS2. from this list, select the “<em>cmmc_deposition_workflow</em>” and click on <em>“Launch Workflow</em>” to start</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide2.png" /></p>
+<ol>
+<li>
+<p>At the “<em>Job Description</em>” field you are free to fill in what you want (eg. name of metabolite you want to deposit). This description will only be visible for you and it will be the name under which the “<em>Task</em>” will be visible in your “<em>Tasks</em>” list. This field is not uploaded to CMMC-kb.</p>
+</li>
+<li>
+<p>At the field of the “Workflow” you will select “<em>Single Upload</em>’.</p>
+</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide3.png" /></p>
+<ol>
+<li>
+<p>If you scroll down you will see all the different fields that will have to be filled out with information about the metabolite you want to deposit to the CMMC-kb. The only mandatory field to be filled out is the first one: “<em>MS/MS identifier</em>”. Each field is explained in detail below under section <strong>“Step-by-step guideline Input Fields for CMMC-kb workflow</strong>”. Please fill out as many fields as possible for the metabolite you want to deposit.</p>
+</li>
+<li>
+<p>Once you have finished filling out the fields, you can click on the button “<em>Submit workflow</em>”. </p>
+</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide4.png" /></p>
+<ol>
+<li>The task will appear in the menu “Tasks” on the top of your screen:</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide5.png" /></p>
+<ol>
+<li>Once the upload is complete, the status of the workflow will change from “RUNNING” to “DONE”. If the status is showing “FAILED”, please consult the FAQ section for possible solutions.</li>
+</ol>
+<h2 id="batch-upload-of-microbial-metabolites">Batch upload of microbial metabolites<a class="headerlink" href="#batch-upload-of-microbial-metabolites" title="Permanent link">&para;</a></h2>
+<p>Although there's an option to upload individual microbial metabolites, users seeking a more efficient approach can utilize our batch upload feature. This method allows for the simultaneous submission of multiple microbial metabolites to CMMC-kb.</p>
+<h3 id="detailed-step-by-step-instructions_1">Detailed step-by-step instructions:<a class="headerlink" href="#detailed-step-by-step-instructions_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Sign-up or login to your GNPS2 account</li>
+<li>CMMC-kb compliant microbial metabolite information</li>
+<li>Navigate to the CMMC-kb metabolite information <a href="https://tinyurl.com/frku9zys">template</a></li>
+</ol>
+<p>The template has the following format:</p>
+<p><img alt="img" src="../img/CMMC_deposition/Slide6.png" /></p>
+<ol>
+<li>Download the spreadsheet as tab-separated values (.tsv).</li>
+<li>Save a copy of the CMMC-kb metabolite information template by going to "File - Make a copy" into a personal google drive or save a local copy to your computer (use the .tsv format or tab-delimited .txt file). </li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide7.png" /></p>
+<ol>
+<li>
+<p>Fill in metabolite information in the respective fields or by using the drop-down menus when applicable for each microbiome related metabolite you want to upload.</p>
+</li>
+<li>
+<p>Go to the <a href="https://gnps2.org/workflowinput?workflowname=cmmc_deposition_workflow">CMMC deposition workflow</a></p>
+</li>
+<li>
+<p>Enter the Job description. This is just for personal tracking of the Job and is not going to be deposited in the CMMC-kb (for example: give the name of the class of metabolites you are uploading).</p>
+</li>
+</ol>
+<p>-&gt; Select <strong>Batch Upload</strong></p>
+<p><img alt="img" src="../img/CMMC_deposition/Slide8.png" /></p>
+<ol>
+<li>Upload your .tsv file to your online environment in GNPS2:</li>
+<li>Select the menu "File Browser" on the top right</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide9.png" /></p>
+<ul>
+<li>Another browser window will open where you will be able to see and organize your files. You can create a new folder (for example: “<em>CMMC</em>” and then select "Upload" (red arrow) at the top right. Select your file .tsv file.</li>
+</ul>
+<p><img alt="img" src="../img/CMMC_deposition/Slide10.png" /></p>
+<ol>
+<li>You can return to the browser where the workflow is open. Select the .tsv file you just uploaded in the “File browser”:</li>
+<li>Click on "Select TSV file path"</li>
+</ol>
+<p><img alt="img" src="../img/CMMC_deposition/Slide11.png" /></p>
+<ul>
+<li>Select the .tsv file you want to deposit, and then click on "Add Selected File to TSV file path". </li>
+</ul>
+<p><img alt="img" src="../img/CMMC_deposition/Slide12.png" /></p>
+<p><img alt="img" src="../img/CMMC_deposition/Slide13.png" /></p>
+<ol>
+<li>Press 'Submit Workflow'</li>
+</ol>
+<h1 id="step-by-step-guideline-input-fields-for-cmmc-kb-workflow-single-and-batch-upload">Step-by-step guideline Input Fields for CMMC-kb workflow (Single and Batch upload)<a class="headerlink" href="#step-by-step-guideline-input-fields-for-cmmc-kb-workflow-single-and-batch-upload" title="Permanent link">&para;</a></h1>
+<h2 id="data-selection">Data Selection:<a class="headerlink" href="#data-selection" title="Permanent link">&para;</a></h2>
+<h3 id="msms-identifier-input_usi">MS/MS identifier (input_usi)<a class="headerlink" href="#msms-identifier-input_usi" title="Permanent link">&para;</a></h3>
+<p><em>The Universal Spectrum Identifier (USI) is a standardized, unique identifier for mass spectrometry data. It provides a compact, human-readable way to specify a single spectrum derived from a mass spectrometry experiment, regardless of its origin or location.</em></p>
+<p>Please input the Universal Spectrum Identifier (USI) for either an unidentified or a library spectrum. This is the sole required field. For the same molecule, you can input multiple MS/MS spectra corresponding to different adducts (e.g., [M+H]+, [M+Na]+), in-source fragments (e.g., [M-H2O+H]+), or distinct instruments (e.g., orbitrap, qtof). We recommend submitting all available USIs for any given microbial metabolite. Separate each USI using a semicolon.</p>
+<p><strong><em>Example:</em></strong>
+<em>mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000426629;mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000425589</em></p>
+<h2 id="metabolite-identification">Metabolite identification:<a class="headerlink" href="#metabolite-identification" title="Permanent link">&para;</a></h2>
+<h3 id="molecule-name-if-known-input_name">Molecule name (if known) (input_name)<a class="headerlink" href="#molecule-name-if-known-input_name" title="Permanent link">&para;</a></h3>
+<p>Please input the metabolite's recognized name. If available, use the name corresponding to PubChem (https://pubchem.ncbi.nlm.nih.gov/). For novel molecules, feel free to assign a name. If there are multiple names you want to add, separate each with a semicolon.</p>
+<p><strong><em>Example:</em></strong> <em>p-Cresol;4-Cresol</em></p>
+<h3 id="structure-if-known-smiles-input_structure">Structure (if known, SMILES) (input_structure)<a class="headerlink" href="#structure-if-known-smiles-input_structure" title="Permanent link">&para;</a></h3>
+<p>Enter the SMILES for the molecule, if available.</p>
+<p><strong><em>Example:</em></strong> <em>CC1=CC=C(C=C1)O</em></p>
+<h3 id="partial-structure-input_partial_structure">Partial structure (input_partial_structure)<a class="headerlink" href="#partial-structure-input_partial_structure" title="Permanent link">&para;</a></h3>
+<p>If the molecule hasn't been fully characterized yet, provide details on the known partial structures. This can include partial SMILES, descriptions of functional groups, or the molecule's class.</p>
+<p><strong><em>Example:</em></strong> <em>Based on the isotopic pattern, the molecule contains at least one Chlorine atom.</em></p>
+<h3 id="molecule-origin-input_molecule_origin">Molecule origin (input_molecule_origin)<a class="headerlink" href="#molecule-origin-input_molecule_origin" title="Permanent link">&para;</a></h3>
+<p>From the drop-down menu, choose the most fitting origin for the molecule.
+The following categories are present:
+  - Microbial metabolism of drugs
+  - Microbial metabolism of food molecules
+  - Microbial metabolism of other human-made molecules
+  - Microbial metabolism of host-derived molecules
+  - Microbial metabolism of microbial-derived molecules
+  - Host metabolism of microbial metabolites
+  - De novo biosynthesis by microbes (e.g., natural products and other specialized metabolites)
+  - Unknown/Undefined</p>
+<p><strong><em>Example:</em></strong> </p>
+<p><em><strong>Microbial metabolism of drugs:</strong> Digoxin gets metabolized into dihydrodigoxin and dihydrodigoxigenin by gut Eggerthella lenta which are inactive metabolites. For dihydrodigoxin and dihydrodigoxigenin, the category would be: microbial metabolism of drugs.</em></p>
+<p><em><strong>Microbial metabolism of food molecules:</strong> Glucosinolates, found in cruciferous vegetables like broccoli and Brussels sprouts, can be converted by the microbiota into isothiocyanates that have potential anti-cancer properties. For the isothiocyanate, the category would be microbial metabolism of food molecules. Another example for this category would be the short-chain fatty acids, as they are produced by bacteria from dietary fiber.</em></p>
+<p><em><strong>Microbial metabolism of other human-made molecules:</strong> Bisphenol A (BPA), a component of many plastics, BPA can be degraded by several bacterial species, reducing its environmental persistence and potential endocrine-disrupting effects. The degradation product of BPA would fall into this category.</em></p>
+<p><em><strong>Microbial metabolism of host-derived molecules:</strong> Bile acids turned into secondary bile acids. The secondary bile acids would fall into this category.</em></p>
+<p><em><strong>De novo biosynthesis by microbes (e.g., natural products and other specialized metabolites):</strong> Antibiotics (eg. penicillin, streptomycin), siderophores, lipopeptides.</em></p>
+<p><em><strong>Unknown/Undefined:</strong> When your microbial metabolite does not fit any of the catergories mentioned above, or if it is still unknown.</em></p>
+<h3 id="name-of-the-original-molecule-that-is-being-modified-by-the-microbe-input_original_molecule_name">Name of the original molecule that is being modified by the microbe (input_original_molecule_name)<a class="headerlink" href="#name-of-the-original-molecule-that-is-being-modified-by-the-microbe-input_original_molecule_name" title="Permanent link">&para;</a></h3>
+<p>If the metabolite results from microbial metabolism, provide the name of the precursor molecule.</p>
+<p><em><strong>Example:</strong> For p-cresol this would be: p-Hydroxyphenylacetic acid;4-Hydroxyphenylacetic acid</em></p>
+<h3 id="structure-of-the-original-molecule-that-is-being-modified-by-the-microbe-input_original_molecule_structure">Structure of the original molecule that is being modified by the microbe (input_original_molecule_structure)<a class="headerlink" href="#structure-of-the-original-molecule-that-is-being-modified-by-the-microbe-input_original_molecule_structure" title="Permanent link">&para;</a></h3>
+<p>If the metabolite originates from microbial metabolism, input the structure of the precursor molecule, using either SMILES or INChI format.</p>
+<p><em><strong>Example:</strong> p-Hydroxyphenylacetic acid is also a microbial metabolite (besides being derived from human metabolism and diet): C1=CC(=CC=C1CC(=O)O)OC1=CC(=CC=C1CC(=O)O)O</em></p>
+<h2 id="taxonomyphylogeny-selection">Taxonomy/Phylogeny selection:<a class="headerlink" href="#taxonomyphylogeny-selection" title="Permanent link">&para;</a></h2>
+<h3 id="microbevirus-id-ncbi-input_microbe_ncbi">Microbe/Virus ID (NCBI) (input_microbe_ncbi)<a class="headerlink" href="#microbevirus-id-ncbi-input_microbe_ncbi" title="Permanent link">&para;</a></h3>
+<p>Input the name of the microbe responsible for producing the metabolite. Please provide the NCBI taxonomy ID (https://www.ncbi.nlm.nih.gov/taxonomy). If the particular microbe lacks an NCBITaxonomyID at the strain or species level, submit the most detailed level available, potentially the genus. For multiple NCBITaxonomyIDs, separate each with a semicolon.</p>
+<p><em><strong>Example:</strong> 53443; 1496; 133926; 1537; 261299</em></p>
+<h3 id="microbe-name-input_microbe_name">Microbe name (input_microbe_name)<a class="headerlink" href="#microbe-name-input_microbe_name" title="Permanent link">&para;</a></h3>
+<p>Input the microbe's name at the most detailed level available. If listing multiple microbes, separate each with a semicolon.</p>
+<p><em><strong>Example:</strong> Blautia hydrogenotrophica; Clostridioides difficile; Olsenella uli; Romboutsia lituseburensis; Intestinibacter bartlettii</em></p>
+<h3 id="microbevirus-dnarna-sequence-information-for-taxonomic-assignment-eg-full-genome-16s-or-18s-sequence-input_microbe_dnarna">Microbe/Virus DNA/RNA (sequence information for taxonomic assignment e.g. full genome, 16S, or 18S sequence) (input_microbe_DNARNA)<a class="headerlink" href="#microbevirus-dnarna-sequence-information-for-taxonomic-assignment-eg-full-genome-16s-or-18s-sequence-input_microbe_dnarna" title="Permanent link">&para;</a></h3>
+<p>If there is no NCBI Taxonomy ID but you have the microbe's sequence, please input the sequencing data for the organism or virus in FASTA format.</p>
+<h3 id="microbial-community-input_microbial_community">Microbial community (input_microbial_community)<a class="headerlink" href="#microbial-community-input_microbial_community" title="Permanent link">&para;</a></h3>
+<p><em>Microbial community: Short-chain Fatty Acids (SCFAs) from Polysaccharide Fermentation: While individual microbes can produce SCFAs like acetate, propionate, and butyrate from the fermentation of dietary fibers, the maximum yield and variety of SCFAs in the gut often result from a succession of microbial activities. 
+For instance:</em>
+<em>1. Primary fermenters break down complex polysaccharides into simpler oligosaccharides and monosaccharides.</em>
+<em>2. Other microbes can then ferment these simpler sugars to produce intermediate metabolites like lactate or succinate.</em>
+<em>3. A third group of microbes can subsequently convert these intermediates into SCFAs.</em></p>
+<p>If the metabolite is produced by a microbial community, enter the link to the raw sequencing data.</p>
+<h3 id="microbial-community-description-input_microbial_community_description">Microbial community description (input_microbial_community_description)<a class="headerlink" href="#microbial-community-description-input_microbial_community_description" title="Permanent link">&para;</a></h3>
+<p>If the metabolite is produced by a microbial community, enter the description of the microbial community.
+Please be as complete as possible in naming the individual bacteria at strain/species level involved in the community. </p>
+<h2 id="biosynthesis">Biosynthesis:<a class="headerlink" href="#biosynthesis" title="Permanent link">&para;</a></h2>
+<h3 id="biosynthesis-of-the-molecule-mibig-accession-input_biosynthesis_mibig">Biosynthesis of the molecule (MIBiG Accession) (input_biosynthesis_mibig)<a class="headerlink" href="#biosynthesis-of-the-molecule-mibig-accession-input_biosynthesis_mibig" title="Permanent link">&para;</a></h3>
+<p><em>MIBiG, which stands for Minimum Information about a Biosynthetic Gene cluster, is a standardized format for the annotation and reporting of biosynthetic gene clusters (BGCs). BGCs are groups of genes that work together to produce secondary metabolites in microbes. These secondary metabolites can include antibiotics, antifungals, and other bioactive compounds.</em></p>
+<p>If the knowledge about the biosynthesis of the metabolite has been curated in MIBiG, enter the accession number (https://mibig.secondarymetabolites.org/repository). In the screenshot below, the accession number for “penicillin” is marked in yellow. </p>
+<p><img alt="img" src="../img/CMMC_deposition/Slide14.png" /></p>
+<h3 id="biosynthesis-of-the-molecule-set-of-gene-names-or-sequence-and-description-input_biosynthesis_genes">Biosynthesis of the molecule (set of Gene names or sequence and description) (input_biosynthesis_genes)<a class="headerlink" href="#biosynthesis-of-the-molecule-set-of-gene-names-or-sequence-and-description-input_biosynthesis_genes" title="Permanent link">&para;</a></h3>
+<p>If the MIBiG repository doesn't contain biosynthesis details for the metabolite, kindly share any relevant information you possess. If multiple genes are involved or can produce the metabolite, these can be added separated by semicolon. This could be gene names or sequence data. For sequence submissions, please use the FASTA format.</p>
+<p><em><strong>Example:</strong> hpdB (CD630_01530);hpdC (CD630_01540);hpdA (CD630_01550).</em></p>
+<h3 id="biosynthesis-description-input_biosynthesis_description">Biosynthesis description (input_biosynthesis_description)<a class="headerlink" href="#biosynthesis-description-input_biosynthesis_description" title="Permanent link">&para;</a></h3>
+<p>If the MIBiG repository doesn't contain biosynthesis details for the metabolite, kindly share any relevant information you possess. Please be as complete as possible. Everything that is known about the biosynthesis is relevant to put here when it is not present in MIBiG.</p>
+<h3 id="metabolite-source-input_source">Metabolite source (input_source)<a class="headerlink" href="#metabolite-source-input_source" title="Permanent link">&para;</a></h3>
+<p>From the drop-down menu, select the source(s) of the metabolite. The following categories are present: 
+   - Microbial
+   - Microbial and Host
+   - Microbial and Diet
+   - Microbial, Host, and Diet
+   - Unknown</p>
+<p><em><strong>Example:</strong></em>
+<em><strong>Microbial:</strong> Select this category when you are certain that the metabolite is only produced by microorganisms. Please note, some microbial metabolites can also be obtained by diet (e.g. fermented foods). Examples would be: Indole-3-propionic acid, N-acyl homoserine lactones, enterobactin.</em>
+<em><strong>Microbial AND Host:</strong> Select this category when you are certain that the metabolite can be produced by bacteria AND host. An example would be: 2-hydroxybutyric acid.</em>
+<em><strong>Microbial AND Diet:</strong> Select this category when you are certain that the metabolite can be produced by bacteria AND obtained through diet. Examples would be: p-Cresol, indole-3-acetic acid, indole-3-lactic acid.</em>
+<em><strong>Microbial, Host, AND Diet:</strong> Select this category when you are certain that the metabolite can be produced by bacteria AND Host AND obtained through diet. Examples would be: acetate, valeric acid, 4-hydroxyphenyl pyruvate.</em>
+<em><strong>Unknown:</strong> If you do not know the origin of your microbial metabolite, please use this category.</em></p>
+<h2 id="activity">Activity:<a class="headerlink" href="#activity" title="Permanent link">&para;</a></h2>
+<h3 id="activity-of-the-molecule-input_activity">Activity of the molecule (input_activity)<a class="headerlink" href="#activity-of-the-molecule-input_activity" title="Permanent link">&para;</a></h3>
+<p>Describe the activity or function of the microbial metabolite if known. More than one activity can be added separated by semicolon. It can be simple descriptions or more complete.</p>
+<p><em><strong>Example:</strong> Acetate acts via at least two major signaling pathways. Based on their mode of action, it is proposed that they can be conceptualized as the acetyl-CoA signaling branch and the G-protein signaling branch. The acetyl-CoA branch involves regulation of protein function and gene transcription via acetylation/deacetylation cycles, as well as through AMPK kinase cascades. This signaling system is operative in all cell types, but the responses are cell type-specific. In contrast, the G-protein branch signals through cyclic AMP (cAMP) and phospholipase C (PLC) and is restricted to certain cell types. The acetyl-CoA branch is linked to the integrated stress response (ISR) associated with oxygen and nutrient deprivation, whereas the G-protein branch involves metabolic regulation based on fatty acid levels (33304273); Free fatty acid receptor 2 (GPR43) is activated by acetate  (12496283)</em></p>
+<h3 id="amount-and-units-of-the-observed-activities-input_concentration_activity">Amount and units of the observed activities (input_concentration_activity)<a class="headerlink" href="#amount-and-units-of-the-observed-activities-input_concentration_activity" title="Permanent link">&para;</a></h3>
+<p>Enter the amount and units of the observed activities, e.g., concentration, normalized units, or ratios. If more than one activity was described in the previous field, enter the amounts and units of the observed activities separated by semicolon in the same order as the previous field.</p>
+<p><em><strong>Example:</strong> Sirtuins play a pivotal role in regulating acetate metabolism through their interactions with two key enzymes known as acyl-CoA short-chain synthetases (ACSS). The ACSS enzymes are the only known mammalian enzymes that can convert free acetate into acetyl-CoA. ACSS1 and ACSS2 predominantly utilize acetate as substrate. Km ACSS1: 0.6 mM; Km ACSS2: 0.11 mM; Km ACSS3: 5.4 mM (11150295;28003429;33281616); Free fatty acid receptor 2 (GPR43) exhibits an EC50 of 52 ± 10 μM for acetate (12496283); Free fatty acid receptor 3 (GPR41) exhibits an EC50 of 1020 ± 200 μM for acetate (12496283)</em></p>
+<h3 id="phenotype-associated-with-the-molecule-input_phenotype_associated">Phenotype associated with the molecule (input_phenotype_associated)<a class="headerlink" href="#phenotype-associated-with-the-molecule-input_phenotype_associated" title="Permanent link">&para;</a></h3>
+<p>Enter the phenotype known to be associated with the microbial metabolite, if known. More than one phenotype can be added separated by semicolon. Links for other databases can also be provided (e.g., http://ctdbase.org/detail.go?type=chem&amp;acc=C005197&amp;view=phenotype).</p>
+<p><em><strong>Example:</strong> From a mouse model of C. difficile infection, it has been shown that excessive p-cresol production affects the gut microbiota biodiversity (30208103); p-Cresol has been recently identified in volunteers as a fecal biomarker of C. difficile infection (30986230).</em></p>
+<h3 id="phenotype-regulation-phenotype_regulation">Phenotype regulation (phenotype_regulation)<a class="headerlink" href="#phenotype-regulation-phenotype_regulation" title="Permanent link">&para;</a></h3>
+<p>Depending on the aforementioned phenotype, please specify the phenotype direction: up-regulated or down-regulated. If more than one phenotype was described in the previous field, enter the direction for each phenotype separated by semicolon in the same order as the previous field.</p>
+<p><em><strong>Example:</strong> upregulated; downregulated</em></p>
+<h3 id="amount-and-units-of-the-observed-phenotype-input_concentration_phenotype">Amount and units of the observed phenotype (input_concentration_phenotype)<a class="headerlink" href="#amount-and-units-of-the-observed-phenotype-input_concentration_phenotype" title="Permanent link">&para;</a></h3>
+<p>Enter the amounts and units of the observed phenotype, e.g., concentration, normalized units, or ratios. If more than one phenotype was described in the previous fields, enter the amounts and units of the observed phenotype separated by semicolon in the same order as the previous fields.</p>
+<p><em><strong>Example:</strong> For the p-cresol example, if it is known it would be nice to give the concentration of p-cresol that is associated with the affected microbiota diversity.</em></p>
+<h2 id="references">References:<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h3 id="references-semicolon-separated-pmid-input_references">References (semicolon separated PMID) (input_references)<a class="headerlink" href="#references-semicolon-separated-pmid-input_references" title="Permanent link">&para;</a></h3>
+<p>Provide all references that support the previous inputs as PubMed IDs (https://pubmed.ncbi.nlm.nih.gov/). More than one entry can be specified separated by semicolon.</p>
+<p><em><strong>Example:</strong> 29982420; 34744609; 31639103; 826152; 34468872; 9115181; 10570076</em></p>
+<h3 id="references-enter-url-link-if-no-pmid-input_references_link">References (enter URL link if no PMID) (input_references_link)<a class="headerlink" href="#references-enter-url-link-if-no-pmid-input_references_link" title="Permanent link">&para;</a></h3>
+<p>If no PMID is available, provide references that support the previous inputs as URL (preprint, webpage, etc). More than one entry can be specified separated by semicolon.</p>
+<p><em><strong>Example:</strong> https://www.omim.org/entry/606054; https://doi.org/10.1111/j.1574-6941.1992.tb00002.x</em></p>
+<h2 id="grant-information">Grant information:<a class="headerlink" href="#grant-information" title="Permanent link">&para;</a></h2>
+<h3 id="grant-agency-grant_agency">Grant agency (grant_agency)<a class="headerlink" href="#grant-agency-grant_agency" title="Permanent link">&para;</a></h3>
+<p>Enter the grant agency that supports you. While optional, this will allow granting agencies to both track what grants are benefiting from this resource but also allows the depositor to provide this information in progress reports. Multiple agencies can be provided separated by semicolon.</p>
+<p><em><strong>Example:</strong> NIH</em></p>
+<h3 id="grant-number-grant_number">Grant number (grant_number)<a class="headerlink" href="#grant-number-grant_number" title="Permanent link">&para;</a></h3>
+<p>Enter the grant number. While optional, this will allow granting agencies to both track what grants are benefiting from this resource but also allows the depositor to provide this information in progress reports. Multiple grant numbers can be provided separated by semicolon.</p>
+<p><em><strong>Example:</strong> 1U24DK133658-01</em></p>
+<h2 id="comments">Comments:<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
+<h3 id="comments-input_comment">Comments (input_comment)<a class="headerlink" href="#comments-input_comment" title="Permanent link">&para;</a></h3>
+<p>Provide any additional information that is relevant for the metabolite (e.g., link for data deposited in NMR repositories (e.g., https://np-mrd.org/), color, physicochemical properties, synonyms, etc) and/or the description of the source from which this metabolite was observed.</p>
+<p><em><strong>Example:</strong> NMR available at: https://np-mrd.org/natural_products/NP0001009</em></p>
+<h1 id="frequently-asked-questions">Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
+<h2 id="what-does-each-column-mean">What does each column mean?<a class="headerlink" href="#what-does-each-column-mean" title="Permanent link">&para;</a></h2>
+<p>The Step-by-step guideline above gives detailed information on what each column means and the second sheet in the batch template called "Information and Columns Descriptions", also contains detailed information on each column.</p>
+<p><img alt="img" src="../img/CMMC_deposition/Slide15.png" /></p>
+<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
+<p>Martijn van Faassen, Helena Mannochio-Russo, Marilyn de Graeve</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 30, 2023 15:29:02</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

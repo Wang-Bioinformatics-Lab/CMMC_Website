@@ -1,0 +1,620 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../deposition_documentation/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Network Enrichment analysis - CMMC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#003DA5" data-md-color-accent="#FFB81C">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation-for-network-enrichment-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CMMC" class="md-header__button md-logo" aria-label="CMMC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMMC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Network Enrichment analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Wang-Bioinformatics-Lab/CMMC_Website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CMMC_Website
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CMMC" class="md-nav__button md-logo" aria-label="CMMC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CMMC
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Wang-Bioinformatics-Lab/CMMC_Website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CMMC_Website
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home Page
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deposition_documentation/" class="md-nav__link">
+        CMMC Deposition Workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Network Enrichment analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Network Enrichment analysis
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-links" class="md-nav__link">
+    Important Links:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#molecular-network-enrichment-workflow-cmmc_gnps_network_enrichement_workflow" class="md-nav__link">
+    Molecular Network Enrichment Workflow (cmmc_gnps_network_enrichement_workflow)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-enrichment-visualization-in-cytoscape" class="md-nav__link">
+    Network Enrichment Visualization in Cytoscape
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributions" class="md-nav__link">
+    Page Contributions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-links" class="md-nav__link">
+    Important Links:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#molecular-network-enrichment-workflow-cmmc_gnps_network_enrichement_workflow" class="md-nav__link">
+    Molecular Network Enrichment Workflow (cmmc_gnps_network_enrichement_workflow)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-enrichment-visualization-in-cytoscape" class="md-nav__link">
+    Network Enrichment Visualization in Cytoscape
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributions" class="md-nav__link">
+    Page Contributions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="documentation-for-network-enrichment-workflow">Documentation for Network Enrichment workflow<a class="headerlink" href="#documentation-for-network-enrichment-workflow" title="Permanent link">&para;</a></h1>
+<p>This is a guide for Network Enrichment Workflow in the collaborative microbial metabolite center knowledgebase (CMMC-kb). </p>
+<h2 id="important-links">Important Links:<a class="headerlink" href="#important-links" title="Permanent link">&para;</a></h2>
+<p><a href="https://gnps2.org/homepage">GNPS2 website</a></p>
+<p><a href="https://gnps2.org/workflowinput?workflowname=cmmc_gnps_network_enrichment_workflow">Network Enrichment workflow</a></p>
+<p><a href="https://cmmc-kb.gnps2.org/">CMMC knowledgebase</a></p>
+<h2 id="molecular-network-enrichment-workflow-cmmc_gnps_network_enrichement_workflow">Molecular Network Enrichment Workflow (cmmc_gnps_network_enrichement_workflow)<a class="headerlink" href="#molecular-network-enrichment-workflow-cmmc_gnps_network_enrichement_workflow" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Log in to your GNPS2 account. </p>
+</li>
+<li>
+<p>Navigate to the GNPS2 website and click on the “Launch Workflows” button</p>
+</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide1.png" /></p>
+<ol>
+<li>This will show the list of available workflows on GNPS2. from this list, select the “cmmc_gnps_network_enrichment_workflow” and click on “Launch Workflow” to start.</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide2.png" /></p>
+<ol>
+<li>
+<p>At the “Job Description” field you are free to fill in what you want (eg. name of network you want to enrich).</p>
+</li>
+<li>
+<p>Under the “File Selection” section, you will have to enter the “GNPS Networking Task”</p>
+</li>
+</ol>
+<p>It is the taskID from the molecular networking job that was performed on GNPS1 (https://gnps.ucsd.edu/). For instance, for this job that was run in GNPS1: 
+https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=9c5a9839da084a258c588c61fe33be61</p>
+<p>The input in the “GNPS Networking Task” is: 9c5a9839da084a258c588c61fe33be61</p>
+<p><img alt="img" src="../img/Network_enrichment/Slide3.png" /></p>
+<ol>
+<li>Choose the type of network to be enrich: </li>
+<li>Classical:  Select Classical if the original molecular networking job was run on the classical workflow (i.e., the data was not pre-processed prior to molecular networking).</li>
+<li>
+<p>FBMN: Select FBMN (Feature-based molecular networking) if the data was pre-processed prior to molecular networking in software like MZmine, OpenMS, MS-DIAL, etc.</p>
+</li>
+<li>
+<p>In the “Library Search” section, fill out the following fields.</p>
+</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide4.png" /></p>
+<ul>
+<li>
+<p><strong>Precursor Ion tolerance:</strong> Parameter used for spectral library search, expressed in Daltons.  This value specifies how much the precursor ions can be shifted from their expected m/z values. Note that the value of this parameter should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generate the MS/MS data. Recommended value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ). </p>
+</li>
+<li>
+<p><strong>Fragment Ion Tolerance:</strong> Parameter used for MS/MS spectral library searches. This value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ).</p>
+</li>
+<li>
+<p><strong>Library Minimum Cosine:</strong> Minimum cosine score between the spectra being searched and the ones deposited in the CMMC libraries.  Lower cosine values can increase the number of false hits, as it becomes less strict. 
+    <em>Default: 0.7</em></p>
+</li>
+<li>
+<p><strong>Library Minimum Match Peaks:</strong> Minimum number of common fragment ions that are shared between the queried spectrum and the ones deposited in the library. Default value is 6, but note that this parameters should be adjusted depending on the molecule of interest, the experimental conditions for mass spectra acquisition (such as mode of ionization, fragmentation conditions, the mobile phase, etc.), and the collision-induced fragmentation settings of the molecules of interest within the samples. High molecular weight (MW) compounds and compounds with more hetero-atoms generally tend to produce more fragment ions. However, this rule is not absolute. For example, some lipids with high MW generate only a few fragment ions.
+<em>Default: 6</em></p>
+</li>
+<li>
+<p><strong>Number of results to report per query:</strong> The maximum number of library hits that a queried spectrum can have, considering the settings of the other parameters.
+<em>Default: 1</em></p>
+</li>
+<li>
+<p><strong>Analog Search:</strong> Enables analog search. Matches query spectra against library MS/MS spectra with a modification tolerant search (different precursor ion mass value). The results have to be carefully curated, since this will introduce more false positives. 
+<em>Default: False</em></p>
+</li>
+<li>
+<p><strong>Analog Max Shift Mass:</strong> Maximum mass shift between the library and putative analogs found. </p>
+</li>
+<li>
+<p>Once you have finished filling out the fields, you can click on the button “<strong>Submit workflow</strong>”.</p>
+</li>
+<li>
+<p>After the status of the job is marked as Done, a first overview of the results can be achieved by clicking on “CMMC Search Results”.</p>
+</li>
+</ul>
+<p><img alt="img" src="../img/Network_enrichment/Slide5.png" /></p>
+<ol>
+<li>After clicking on “CMMC Search Results”, a new window opens that looks like this one, and rapidly you can see which metabolites deposited in CMMC matched with the experimental spectra. In addition, you can see which microbes produce these compounds (in the example below, deoxycholic acid conjugated to alanine).</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide6.png" /></p>
+<ol>
+<li>To do molecular networking, scroll down under the “Task Results Links” and click on "Browse All Results” if you want to specifically download the results for the molecular networking visualization. You can also click on "Download All Results" if you want to have all files in your local computer.</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide7.png" /></p>
+<ol>
+<li>
+<p>In the “gnps_network” folder, download the “network.graphml” file that will be imported in the Cytoscape software.</p>
+</li>
+<li>
+<p>In the “cmmc_results" folder, download the “cmmc_enriched_results.tsv” table, which will be uploaded later on on Cytoscape. </p>
+</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide8.png" /></p>
+<h2 id="network-enrichment-visualization-in-cytoscape">Network Enrichment Visualization in Cytoscape<a class="headerlink" href="#network-enrichment-visualization-in-cytoscape" title="Permanent link">&para;</a></h2>
+<p>Cytoscape is an open-source software platform for visualization and annotation of networks. Cytoscape is available for download from <a href="https://cytoscape.org/">here</a>. The instructions below assume that you have installed Cytoscape 3.10.1.</p>
+<ol>
+<li>Now open Cytoscape 3.10.1. From the Toolbar, go to File / Import / Network from File and then select the <strong>.graphml</strong> file (see point #10 if necessary). You can also drag and drop this file into Cytoscape. You can select whichever style you prefer after that.</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide9.png" /></p>
+<ol>
+<li>From the Toolbar, go to File / Import / table from File and then select the <strong>.tsv</strong> file (see point #11 if necessary).</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide10.png" /></p>
+<ol>
+<li>A new window will open that will look like this.</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide11.png" /></p>
+<p>Click on the “<strong>query_scan</strong>” column of the table to be imported, and click on the “<strong>key sign</strong>”. This means that this column will be directly compared with the "shared name" column under the Key Column for Network field. In this case, "shared name" is already part of the .graphml file initially imported and it is an information referred to the cluster index (if a classical molecular networking job was run), or to the scan number (if FBMN job was run).</p>
+<p><img alt="img" src="../img/Network_enrichment/Slide12.png" /></p>
+<ol>
+<li>All the columns present in the imported table can now be observed in the note table, including the  “<strong>input_microbe_name</strong>” column.</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide13.png" /></p>
+<ol>
+<li>
+<p>On the left side menu, under the “Fill Color”, in the column select “input_microbe_name” and under “Mapping Type” select “Discrete Mapping”.</p>
+</li>
+<li>
+<p>Select all the rows that show up (lists of microbes), right-click and “Edit” then, “Edits Selected Discrete Mapping Values”. Then, select the color of your choice and your network should like this. In this case, the nodes that are colored as green represent features that had a library match with the spectra deposited in CMMC and that have microbial information associated with them.</p>
+</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide14.png" /></p>
+<ol>
+<li>On the left side, under the “Label”, in the column select “Library_compound_name” and under “Mapping Type” select “Passthrough Mapping”. In this way, the compound names that were retrieved from CMMC can be shown as nodes labels.</li>
+</ol>
+<p><img alt="img" src="../img/Network_enrichment/Slide15.png" /></p>
+<ol>
+<li><strong>Conclusion:</strong> Now, we can see all the microbial-conjugated bile acids (MCBAs) (green nodes), especially which microbes (see yellow box) can produce Phe-CA (see black arrow). </li>
+</ol>
+<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
+<p>Vincent Charron-Lamoureux, Helena Mannochio-Russo</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 30, 2023 15:30:11</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
