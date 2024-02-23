@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../network_enrichment/">
       
       
-        <link rel="next" href="../deposition_documentation/">
+        <link rel="next" href="../contact/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Getting a USI - CMMC</title>
+        <title>CMMC Workshops/Training - CMMC</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documentation-for-cmmc-deposition-workflow" class="md-skip">
+        <a href="#cmmc-workshops-and-training" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting a USI
+              CMMC Workshops/Training
             
           </span>
         </div>
@@ -249,19 +249,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -274,7 +272,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -285,18 +283,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../get_USI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -305,7 +294,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -362,9 +350,27 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../workshops/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CMMC Workshops/Training
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -373,6 +379,31 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmmc-workshops-and-training" class="md-nav__link">
+    CMMC workshops and training
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -413,8 +444,21 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmmc-workshops-and-training" class="md-nav__link">
+    CMMC workshops and training
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -432,74 +476,32 @@
   
 
 
-<h1 id="documentation-for-cmmc-deposition-workflow">Documentation for CMMC deposition workflow<a class="headerlink" href="#documentation-for-cmmc-deposition-workflow" title="Permanent link">&para;</a></h1>
-<p>This is a guide on how you can get a USI to further deposit it in the collaborative microbial metabolite center knowledgebase (CMMC-kb). </p>
-<h1 id="important-links">Important links:<a class="headerlink" href="#important-links" title="Permanent link">&para;</a></h1>
-<p><a href="https://gnps2.org/homepage">GNPS2 website</a></p>
-<p><a href="https://metabolomics-usi.gnps2.org/">Metabolomics Spectrum Resolver</a></p>
-<p><a href="https://www.biorxiv.org/content/10.1101/2020.05.09.086066v2">Metabolomics Spectrum Resolver preprint</a></p>
-<p><a href="https://dashboard.gnps2.org/">GNPS Dashboard</a></p>
-<h2 id="what-is-a-usi">What is a USI?<a class="headerlink" href="#what-is-a-usi" title="Permanent link">&para;</a></h2>
-<p>USI stands for Universal Spectrum Identifier, which provides a standardized mechanism for encoding a virtual path to spectra contained in public metabolomics repositories. Currently, it supports data formats from GNPS, GNPS2, MassBank, MS2LDA, MassIVE, MetaboLights, and Metabolomics Workbench and is integrated into several of these resources. </p>
-<h2 id="how-can-i-get-a-usi-for-my-spectrum">How can I get a USI for my spectrum?<a class="headerlink" href="#how-can-i-get-a-usi-for-my-spectrum" title="Permanent link">&para;</a></h2>
-<p>First, we must get the mass spectrometry data into a public repository. While GNPS/MASSIVE is the preferred repository, USI’s can be linked from other repositories including Metabolights and Metabolomics Workbench. Please visit those websites for upload instructions as this document will focus on GNPS/MassIVE. </p>
-<p>If you don’t have MS/MS data on the microbial molecules, please contact the CMMC team as we will help collect it for you, or come up with an experimental plan so you can collect such data. There are several methods to upload mass spectrometry data to GNPS/MassIVE, and they can be separated into <strong>single MS/MS</strong> or via entire untargeted mass spectrometry <strong>files</strong> or <strong>projects</strong>. The MS/MS and/or data files must be public before they can be used for the CMMC microbial metabolite KB curation.</p>
-<h3 id="1-conversion-to-mzml">1) Conversion to .mzML<a class="headerlink" href="#1-conversion-to-mzml" title="Permanent link">&para;</a></h3>
-<p>The first step is to make sure that the data is in a compatible format. The CMMC-KB will use .mzML as input files. This is an open mass spectrometry format, and depending on the vendor, the conversion can be achieved following different steps. The vendor could have a software that supports this kind of conversion, or it can be achieved following the instructions found <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">here</a>. In addition, if it is a small data set (&lt;50 files), it is possible to use <a href="https://gnps-quickstart.ucsd.edu/conversion">drag-and-drop conversion</a> of the data.</p>
-<h3 id="2-uploading-the-data">2) Uploading the data<a class="headerlink" href="#2-uploading-the-data" title="Permanent link">&para;</a></h3>
-<p><strong>- Adding data to a Spectral Library or creating a new one</strong></p>
-<p>For adding individual MS/MS spectra into the GNPS libraries, we have step-by-step instructions <a href="https://ccms-ucsd.github.io/GNPSDocumentation/spectrumcuration/">here</a>. There is also a batch process for the creation of a new MS/MS library that can be achieved by <a href="https://ccms-ucsd.github.io/GNPSDocumentation/batchupload/">batch upload</a>. In addition, if GNPS analysis tools (such as molecular networking) are used, one can also use “reannotate” to add the MS/MS spectrum to the library.</p>
-<p><strong>- Uploading the entire file or dataset from which MS/MS will be selected for curation of the CMMC-kb</strong></p>
-<p>For small data sets, the <a href="https://gnps-quickstart.ucsd.edu/massivesubmission">quick start</a> approach with a drag-and-drop interface can be used.</p>
-<p>When it is a larger LC-MS/MS dataset, then please follow the instructions <a href="https://ccms-ucsd.github.io/GNPSDocumentation/datasets/">here</a>.</p>
-<p>We highly encourage that a metadata table associated with files is deposited as well. The <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">ReDU template</a> is recommended as this can leveraged in MASST, ReDU interface, and domain-specific MASST tools such as foodMASST and microbeMASST.</p>
-<h3 id="2-getting-the-usi">2) Getting the USI<a class="headerlink" href="#2-getting-the-usi" title="Permanent link">&para;</a></h3>
-<p><strong>- From spectra deposited in the libraries</strong></p>
-<p>All MS/MS spectra that are curated in a GNPS spectral library can be found <a href="https://library.gnps2.org/">here</a>. To get the USI, find the compound of interest by searching the columns or SMILES. For example, the USI for the microbially conjugated Phe-CA can be found by typing "Phe-CA" and clicking in the circle relative to the row you want to select.</p>
-<p><img alt="img" src="../img/Get_USI/Slide1.png" /></p>
-<p>Clicking on the circle results in the display of the spectrum and the USI, which are visible by scrolling up.</p>
-<p><img alt="img" src="../img/Get_USI/Slide2.png" /></p>
-<p>Therefore, this is the USI for this spectrum highlighter above:
-<strong>mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00011432553</strong></p>
-<p><strong>- From a public LC-MS/MS dataset</strong></p>
+  <h1>CMMC Workshops/Training</h1>
+
+<h2 id="cmmc-workshops-and-training">CMMC workshops and training<a class="headerlink" href="#cmmc-workshops-and-training" title="Permanent link">&para;</a></h2>
+<p>Workshops are being provided to enable grantees and the large scientific community to get familiarized with the tools developed as part of these efforts.
+Check out below the workshops that were already organized!</p>
 <ul>
-<li>Go to the GNPS Dashboard and wait a few seconds for the page to load.</li>
-<li>Provide the data accession number (MassIVE ID) of the dataset.</li>
+<li><strong>Network Enrichment analysis and CMMC Deposition workflow workshop  - October 31st, 2023</strong></li>
 </ul>
-<p><img alt="img" src="../img/Get_USI/Slide3.png" /></p>
+<iframe width="600" height="350" src="https://www.youtube.com/embed/EcEq1uVP8TQ"> </iframe>
+
 <ul>
-<li>When the dataset is loaded in the GNPS Dashboard, then the name of the dataset and associated files will show up.</li>
+<li><strong>microbeMASST workshop  - June 5th, 2023</strong></li>
 </ul>
-<p><img alt="img" src="../img/Get_USI/Slide4.png" /></p>
+<iframe width="600" height="350" src="https://www.youtube.com/embed/aB15wHR9kbY"> </iframe>
+
 <ul>
-<li>Select the file from which you want to use the MS/MS to upload to the CMMC-kb.</li>
+<li><strong>Classical Molecular Networking workshop - May 30th, 2023</strong></li>
 </ul>
-<p>PS: if the file is not already cashed, it may take a few minutes to show up on the webpage.</p>
-<ul>
-<li>After selecting the .mzML file of interest, scroll up and click on "<em>visualize 1 file</em>".</li>
-</ul>
-<p><img alt="img" src="../img/Get_USI/Slide5.png" /></p>
-<ul>
-<li>Filter for the ion of interest. </li>
-</ul>
-<p>Detailed descriptions of how to navigate the GNPS Dashboard can be found <a href="https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/">here</a>. Briefly, it is possible to filter by the ion of interest using the XIC options or by scrolling to the retention time and m/z visualization window and then clicking on the blue X to get the MS/MS spectrum.</p>
-<ul>
-<li>In the MS/MS visualization, click on "<em>View Metabolomics USI</em>".</li>
-</ul>
-<p><img src="https://github.com/helenamrusso/CMMC_Website/blob/master/docs/img/Get_USI/Slide8.png" width="500" height="400"></p>
-<ul>
-<li>Get the USI from the new window.</li>
-</ul>
-<p><img alt="img" src="../img/Get_USI/Slide9.png" /></p>
-<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p>Helena Mannochio-Russo, Pieter Dorrestein</p>
+<iframe width="600" height="350" src="https://www.youtube.com/embed/wUrsqmAFEys"> </iframe>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2023 23:32:39</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 21, 2024 21:39:35</span>
       
     
   </small>
