@@ -61,7 +61,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -644,11 +653,11 @@
 <p>Navigate to the GNPS2 website and click on the “Launch Workflows” button</p>
 </li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide1.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide1.png" /></a></p>
 <ol>
 <li>This will show the list of available workflows on GNPS2. from this list, select the “<em>cmmc_deposition_workflow</em>” and click on <em>“Launch Workflow</em>” to start</li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide2.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide2.png" /></a></p>
 <ol>
 <li>
 <p>At the “<em>Job Description</em>” field you are free to fill in what you want (eg. name of metabolite you want to deposit). This description will only be visible for you and it will be the name under which the “<em>Task</em>” will be visible in your “<em>Tasks</em>” list. This field is not uploaded to CMMC-kb.</p>
@@ -657,7 +666,7 @@
 <p>At the field of the “Workflow” you will select “<em>Single Upload</em>’.</p>
 </li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide3.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide3.png" /></a></p>
 <ol>
 <li>
 <p>If you scroll down you will see all the different fields that will have to be filled out with information about the metabolite you want to deposit to the CMMC-kb. The only mandatory field to be filled out is the first one: “<em>MS/MS identifier</em>”. Each field is explained in detail below under section <strong>“Step-by-step guideline Input Fields for CMMC-kb workflow</strong>”. Please fill out as many fields as possible for the metabolite you want to deposit.</p>
@@ -666,11 +675,11 @@
 <p>Once you have finished filling out the fields, you can click on the button “<em>Submit workflow</em>”. </p>
 </li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide4.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide4.png" /></a></p>
 <ol>
 <li>The task will appear in the menu “Tasks” on the top of your screen:</li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide5.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide5.png" /></a></p>
 <ol>
 <li>Once the upload is complete, the status of the workflow will change from “RUNNING” to “DONE”. If the status is showing “FAILED”, please consult the FAQ section for possible solutions.</li>
 </ol>
@@ -683,7 +692,7 @@
 <li>Navigate to the CMMC-kb metabolite information <a href="https://tinyurl.com/frku9zys">template</a></li>
 </ol>
 <p>The template has the following format:</p>
-<p><img alt="img" src="../img/CMMC_deposition/Slide6.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide6.png" /></a></p>
 <ol>
 <li>
 <p>Save a copy of the CMMC-kb metabolite information template in your Google Drive by going to "File - Make a copy".</p>
@@ -695,7 +704,7 @@
 <p>Download the spreadsheet as tab-separated values (.tsv).</p>
 </li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide7.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide7.png" /></a></p>
 <ol>
 <li>
 <p>Go to the <a href="https://gnps2.org/workflowinput?workflowname=cmmc_deposition_workflow">CMMC deposition workflow</a></p>
@@ -705,26 +714,26 @@
 </li>
 </ol>
 <p>-&gt; Select <strong>Batch Upload</strong></p>
-<p><img alt="img" src="../img/CMMC_deposition/Slide8.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide8.png" /></a></p>
 <ol>
 <li>Upload your .tsv file to your online environment in GNPS2:</li>
 <li>Select the menu "File Browser" on the top right</li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide9.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide9.png" /></a></p>
 <ul>
 <li>Another browser window will open where you will be able to see and organize your files. You can create a new folder (for example: “<em>CMMC</em>” and then select "Upload" (red arrow) at the top right. Select your file .tsv file.</li>
 </ul>
-<p><img alt="img" src="../img/CMMC_deposition/Slide10.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide10.png" /></a></p>
 <ol>
 <li>You can return to the browser where the workflow is open. Select the .tsv file you just uploaded in the “File browser”:</li>
 <li>Click on "Select TSV file path"</li>
 </ol>
-<p><img alt="img" src="../img/CMMC_deposition/Slide11.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide11.png" /></a></p>
 <ul>
 <li>Select the .tsv file you want to deposit, and then click on "Add Selected File to TSV file path". </li>
 </ul>
-<p><img alt="img" src="../img/CMMC_deposition/Slide12.png" /></p>
-<p><img alt="img" src="../img/CMMC_deposition/Slide13.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide12.png" /></a></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide13.png" /></a></p>
 <ol>
 <li>Press 'Submit Workflow'</li>
 </ol>
@@ -798,7 +807,7 @@ Please be as complete as possible in naming the individual bacteria at strain/sp
 <h3 id="biosynthesis-of-the-molecule-mibig-accession-input_biosynthesis_mibig">Biosynthesis of the molecule (MIBiG Accession) (input_biosynthesis_mibig)<a class="headerlink" href="#biosynthesis-of-the-molecule-mibig-accession-input_biosynthesis_mibig" title="Permanent link">&para;</a></h3>
 <p><em>MIBiG, which stands for Minimum Information about a Biosynthetic Gene cluster, is a standardized format for the annotation and reporting of biosynthetic gene clusters (BGCs). BGCs are groups of genes that work together to produce secondary metabolites in microbes. These secondary metabolites can include antibiotics, antifungals, and other bioactive compounds.</em></p>
 <p>If the knowledge about the biosynthesis of the metabolite has been curated in MIBiG, enter the accession number (https://mibig.secondarymetabolites.org/repository). In the screenshot below, the accession number for “penicillin” is marked in yellow. </p>
-<p><img alt="img" src="../img/CMMC_deposition/Slide14.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide14.png" /></a></p>
 <h3 id="biosynthesis-of-the-molecule-set-of-gene-names-or-sequence-and-description-input_biosynthesis_genes">Biosynthesis of the molecule (set of Gene names or sequence and description) (input_biosynthesis_genes)<a class="headerlink" href="#biosynthesis-of-the-molecule-set-of-gene-names-or-sequence-and-description-input_biosynthesis_genes" title="Permanent link">&para;</a></h3>
 <p>If the MIBiG repository doesn't contain biosynthesis details for the metabolite, kindly share any relevant information you possess. If multiple genes are involved or can produce the metabolite, these can be added separated by semicolon. This could be gene names or sequence data. For sequence submissions, please use the FASTA format.</p>
 <p><em><strong>Example:</strong> hpdB (CD630_01530);hpdC (CD630_01540);hpdA (CD630_01550).</em></p>
@@ -854,7 +863,7 @@ Please be as complete as possible in naming the individual bacteria at strain/sp
 <h1 id="frequently-asked-questions">Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
 <h2 id="what-does-each-column-mean">What does each column mean?<a class="headerlink" href="#what-does-each-column-mean" title="Permanent link">&para;</a></h2>
 <p>The Step-by-step guideline above gives detailed information on what each column means and the second sheet in the batch template called "Information and Columns Descriptions", also contains detailed information on each column.</p>
-<p><img alt="img" src="../img/CMMC_deposition/Slide15.png" /></p>
+<p><a class="glightbox" href="../img/CMMC_deposition/Slide15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/CMMC_deposition/Slide15.png" /></a></p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
 <p>Martijn van Faassen, Helena Mannochio-Russo, Marilyn de Graeve</p>
 
@@ -913,5 +922,7 @@ Please be as complete as possible in naming the individual bacteria at strain/sp
       <script src="../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

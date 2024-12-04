@@ -61,7 +61,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -473,9 +482,9 @@
 <h3 id="2-getting-the-usi">2) Getting the USI<a class="headerlink" href="#2-getting-the-usi" title="Permanent link">&para;</a></h3>
 <p><strong>- From spectra deposited in the libraries</strong></p>
 <p>All MS/MS spectra that are curated in a GNPS spectral library can be found <a href="https://library.gnps2.org/">here</a>. To get the USI, find the compound of interest by searching the columns or SMILES. For example, the USI for the microbially conjugated Phe-CA can be found by typing "Phe-CA" and clicking in the circle relative to the row you want to select.</p>
-<p><img alt="img" src="../img/Get_USI/Slide1.png" /></p>
+<p><a class="glightbox" href="../img/Get_USI/Slide1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/Get_USI/Slide1.png" /></a></p>
 <p>Clicking on the circle results in the display of the spectrum and the USI, which are visible by scrolling up.</p>
-<p><img alt="img" src="../img/Get_USI/Slide2.png" /></p>
+<p><a class="glightbox" href="../img/Get_USI/Slide2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/Get_USI/Slide2.png" /></a></p>
 <p>Therefore, this is the USI for this spectrum highlighter above:
 <strong>mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00011432553</strong></p>
 <p><strong>- From a public LC-MS/MS dataset</strong></p>
@@ -483,11 +492,11 @@
 <li>Go to the GNPS Dashboard and wait a few seconds for the page to load.</li>
 <li>Provide the data accession number (MassIVE ID) of the dataset.</li>
 </ul>
-<p><img alt="img" src="../img/Get_USI/Slide3.png" /></p>
+<p><a class="glightbox" href="../img/Get_USI/Slide3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/Get_USI/Slide3.png" /></a></p>
 <ul>
 <li>When the dataset is loaded in the GNPS Dashboard, then the name of the dataset and associated files will show up.</li>
 </ul>
-<p><img alt="img" src="../img/Get_USI/Slide4.png" /></p>
+<p><a class="glightbox" href="../img/Get_USI/Slide4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/Get_USI/Slide4.png" /></a></p>
 <ul>
 <li>Select the file from which you want to use the MS/MS to upload to the CMMC-kb.</li>
 </ul>
@@ -495,7 +504,7 @@
 <ul>
 <li>After selecting the .mzML file of interest, scroll up and click on "<em>visualize 1 file</em>".</li>
 </ul>
-<p><img alt="img" src="../img/Get_USI/Slide5.png" /></p>
+<p><a class="glightbox" href="../img/Get_USI/Slide5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/Get_USI/Slide5.png" /></a></p>
 <ul>
 <li>Filter for the ion of interest. </li>
 </ul>
@@ -503,11 +512,11 @@
 <ul>
 <li>In the MS/MS visualization, click on "<em>View Metabolomics USI</em>".</li>
 </ul>
-<p><img src="https://github.com/helenamrusso/CMMC_Website/blob/master/docs/img/Get_USI/Slide8.png" width="500" height="400"></p>
+<p><a class="glightbox" href="https://github.com/helenamrusso/CMMC_Website/blob/master/docs/img/Get_USI/Slide8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/helenamrusso/CMMC_Website/blob/master/docs/img/Get_USI/Slide8.png" width="500" height="400"></a></p>
 <ul>
 <li>Get the USI from the new window.</li>
 </ul>
-<p><img alt="img" src="../img/Get_USI/Slide9.png" /></p>
+<p><a class="glightbox" href="../img/Get_USI/Slide9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/Get_USI/Slide9.png" /></a></p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
 <p>Helena Mannochio-Russo, Pieter Dorrestein</p>
 
@@ -566,5 +575,7 @@
       <script src="../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

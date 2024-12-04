@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -648,7 +657,7 @@
 
 
 <h1 id="collaborative-microbial-metabolite-center">Collaborative Microbial Metabolite Center<a class="headerlink" href="#collaborative-microbial-metabolite-center" title="Permanent link">&para;</a></h1>
-<p><img alt="CMMC Logo" src="img/logo.png" /></p>
+<p><a class="glightbox" href="img/logo.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="CMMC Logo" src="img/logo.png" /></a></p>
 <p>Welcome to the Collaborative Microbial Metabolite (CMMC) Center at the UC San Diego and UC Riverside. The goal of the CMMC is to build a microbial metabolite knowledgebase with and for the scientific community according to the RFA Identification and Characterization of Bioactive Microbial Metabolites. This center is supported by the National Institutes of Health (NIH) Advancing Research on Microbe-Diet-Host Interactions Knowledgebase Management Center (U24) grant mechanism - <a href="https://grants.nih.gov/grants/guide/rfa-files/rfa-dk-21-014.html">RFA Link</a>. </p>
 <h2 id="key-objectives">Key Objectives<a class="headerlink" href="#key-objectives" title="Permanent link">&para;</a></h2>
 <p>We aim to capture the knowledge about microbial metabolites, even detectable but uncharacterized microbial metabolites to build a microbial metabolite knowledgebase. The goal of the knowledgebase is to ensure it can be reused to make it easier to mechanistically understand the functional role of the microbiome. This will be accomplished through digitizing the relationships between diet, host and microbial metabolism and the activities of the metabolites. </p>
@@ -675,9 +684,9 @@ Identification and Characterization of Bioactive Microbial Metabolites for Advan
 <p>Robin Knight - UC San Diego</p>
 <h2 id="database-statistics-summary">Database Statistics Summary<a class="headerlink" href="#database-statistics-summary" title="Permanent link">&para;</a></h2>
 <h3 id="cmmc-kb-growth">CMMC-KB Growth<a class="headerlink" href="#cmmc-kb-growth" title="Permanent link">&para;</a></h3>
-<p><img alt="New InchiKeys" src="img/statistics/cmmc_growth_new_inchikeys_by_month.svg" />
-<img alt="Total InchiKeys" src="img/statistics/cmmc_growth_cumulative_inchikeys_by_month.svg" />
-<img alt="CMMC depositions graph" src="img/statistics/cmmc_growth_total_usis.svg" /></p>
+<p><a class="glightbox" href="img/statistics/cmmc_growth_new_inchikeys_by_month.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="New InchiKeys" src="img/statistics/cmmc_growth_new_inchikeys_by_month.svg" /></a>
+<a class="glightbox" href="img/statistics/cmmc_growth_cumulative_inchikeys_by_month.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Total InchiKeys" src="img/statistics/cmmc_growth_cumulative_inchikeys_by_month.svg" /></a>
+<a class="glightbox" href="img/statistics/cmmc_growth_total_usis.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="CMMC depositions graph" src="img/statistics/cmmc_growth_total_usis.svg" /></a></p>
 <h3 id="cmmc-kb-top-contributors">CMMC-KB - Top contributors<sup>*</sup><a class="headerlink" href="#cmmc-kb-top-contributors" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -888,5 +897,7 @@ Identification and Characterization of Bioactive Microbial Metabolites for Advan
       <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
