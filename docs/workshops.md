@@ -17,7 +17,6 @@ The workshop drew 70 registrants from nearly 40 institutions, including UC campu
   ![Workshop attendees during the LC-MS-based untargeted metabolomics event at UC San Diego](img/nov-2025-workshop/IMG_8162.jpeg)
   ![Workshop session photo from the LC-MS-based untargeted metabolomics event at UC San Diego](img/nov-2025-workshop/IMG_8165.jpeg)
   ![Participants at the LC-MS-based untargeted metabolomics workshop at UC San Diego](img/nov-2025-workshop/IMG_8180.jpeg)
-  ![Hands-on workshop photo from the LC-MS-based untargeted metabolomics event at UC San Diego](img/nov-2025-workshop/IMG_8186.jpeg)
 
 - **Network Enrichment analysis and CMMC Deposition workflow workshop  - October 31st, 2023**
 <iframe width="600" height="350" src="https://www.youtube.com/embed/EcEq1uVP8TQ"> </iframe>
