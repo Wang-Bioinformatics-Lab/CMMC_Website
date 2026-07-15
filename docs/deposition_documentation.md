@@ -212,10 +212,15 @@ Input the name of the microbe responsible for producing the metabolite. Please p
 
 _**Example:** 53443; 1496; 133926; 1537; 261299_
 
-### Microbe name (`input_microbe_name`)
-Input the microbe's name at the most detailed level available. If listing multiple microbes, separate each with a semicolon.
+### NCBI Genome assembly identifier (accession) of Microbe/Virus DNA/RNA (`input_microbe_genome_assembly`)
+If the sequencing data for this strain or isolate is available on NCBI, input the microbe genome GenBank or RefSeq assembly accession. You can search for the assembly accession on [NCBI Datasets](https://ncbi.nlm.nih.gov/datasets/genome).
 
-_**Example:** Blautia hydrogenotrophica; Clostridioides difficile; Olsenella uli; Romboutsia lituseburensis; Intestinibacter bartlettii_
+_**Example:** GCF_001685355.1_
+
+### Microbe name (`input_microbe_name`)
+Input the microbe's scientific name at the most detailed level available. If listing multiple microbes, separate each with a semicolon. Please include the strain or isolate identifiers with the name where possible.
+
+_**Example:** Blautia hydrogenotrophica; Clostridioides difficile Cd1; Olsenella uli; Romboutsia lituseburensis; Intestinibacter bartlettii; Streptomyces sp. B1I3; Actinomycetota bacterium MFD06157-9B.bin.c.7_
 
 ### Microbe/Virus DNA/RNA (sequence information for taxonomic assignment e.g. full genome, 16S, or 18S sequence) (`input_microbe_DNARNA`)
 If there is no NCBI Taxonomy ID, but you have the microbe's sequence, please input the sequencing data for the organism or virus in FASTA format.
